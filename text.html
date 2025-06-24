@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drone Club</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Drone Club</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li class="dropdown">
+                <a href="#roles">Roles <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#president">President</a></li>
+                    <li><a href="#vice-president">Vice President</a></li>
+                    <li><a href="#operation-heads">Operation Heads</a></li>
+                    <li><a href="#social-media-heads">Social Media Heads</a></li>
+                    <li><a href="#outreach-head">Outreach Head</a></li>
+                    <li><a href="#finance-head">Finance Head</a></li>
+                </ul>
+            </li>
+            <li><a href="https://profileindev.niat.tech/">Profile</a></li>
+            <li><a href="https://droneclublogin.niat.tech/">Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section with Background Video -->
+    <section id="home" class="hero">
+        <video autoplay muted loop id="hero-video">
+            <source src="https://res.cloudinary.com/dwgy2kfpx/video/upload/v1741342081/videoplayback_5_uj3dy2.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <div class="hero-content">
+            <h1>Drone Club</h1>
+            <p>Exploring the skies with cutting-edge technology</p>
+            <a href="https://learndrones.niat.tech/" class="cta-button">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Carousel Section -->
+    <section class="carousel-section">
+        <h2>Our Latest Projects</h2>
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://images.unsplash.com/photo-1579829366248-204fe8413f31?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Drone Project 1">
+                    <div class="carousel-caption">
+                        <h3>Aerial Photography</h3>
+                        <p>Capturing stunning landscapes from above</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1507582020474-9a35b7d455d9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Drone Project 2">
+                    <div class="carousel-caption">
+                        <h3>Drone Racing</h3>
+                        <p>High-speed competitions</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://res.cloudinary.com/dwgy2kfpx/image/upload/v1743489516/Screenshot_2025-04-01_120800_v7qmc4.png" alt="Drone Project 3">
+                    <div class="carousel-caption">
+                        <h3>Team</h3>
+                        <p>Innovative and explorative Team</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control prev" onclick="moveCarousel(-1)">&#10094;</button>
+            <button class="carousel-control next" onclick="moveCarousel(1)">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- Roles Section -->
+    <section id="roles" class="roles-section">
+        <h2>Club Roles and Responsibilities</h2>
+
+        <div id="president" class="role-card">
+            <div class="role-info">
+                <h3><a class="post" href="https://chidviportfolio.niat.tech/">President</a></h3>
+                <p>Oversees all club activities and ensures smooth operation.</p>
+                <ul>
+                    <li>Leads club meetings</li>
+                    <li>Represents the club at university events</li>
+                    <li>Coordinates with faculty advisors</li>
+                </ul>
+            </div>
+            <div class="role-image" onclick="openModal('President', 'Oversees all club activities, leads meetings, represents the club, coordinates with faculty.')">
+                <img src="https://res.cloudinary.com/dwgy2kfpx/image/upload/v1743488666/Screenshot_2025-04-01_115013_r45us5.png" alt="President">
+            </div>
+        </div>
+
+        <div id="vice-president" class="role-card">
+            <div class="role-info">
+                <h3><a class="post" href="https://vicepresident1.niat.tech/">Vice President</a></h3>
+                <p>Assists the president and manages internal operations.</p>
+                <ul>
+                    <li>Takes over when president is unavailable</li>
+                    <li>Manages member participation</li>
+                    <li>Organizes internal events</li>
+                </ul>
+            </div>
+            <div class="role-image" onclick="openModal('Vice President', 'Assists president, manages operations, organizes events, handles member participation.')">
+                <img src="https://res.cloudinary.com/dwgy2kfpx/image/upload/v1743488666/Screenshot_2025-04-01_115029_tq4nj3.png" alt="Vice President">
+            </div>
+        </div>
+
+        <div id="operation-heads" class="role-card">
+            <div class="role-info">
+                <h3>Operation Heads</h3>
+                <p>Manages the technical aspects of drone operations.</p>
+                <ul>
+                    <li>Maintains drone equipment</li>
+                    <li>Ensures safety protocols</li>
+                    <li>Trains new members</li>
+                </ul>
+            </div>
+            <div class="role-image" onclick="openModal('Operation Heads', 'Manages technical operations, maintains equipment, ensures safety, trains members.')">
+                <img src="https://res.cloudinary.com/dwgy2kfpx/image/upload/v1743488666/Screenshot_2025-04-01_115042_ux36mr.png" alt="Operation Heads">
+            </div>
+        </div>
+        <div id="operation-heads" class="role-card">
+            <div class="role-info">
+                <h3>Operation Heads</h3>
+                <p>Manages the technical aspects of drone operations.</p>
+                <ul>
+                    <li>Maintains drone equipment</li>
+                    <li>Ensures safety protocols</li>
+                    <li>Trains new members</li>
+                </ul>
+            </div>
+            <div class="role-image" onclick="openModal('Operation Heads', 'Manages technical operations, maintains equipment, ensures safety, trains members.')">
+                <img src="https://res.cloudinary.com/dwgy2kfpx/image/upload/v1743488665/Screenshot_2025-04-01_115105_a1ws1h.png" alt="Operation Heads">
+            </div>
+        </div>
+        <div id="operation-heads" class="role-card">
+            <div class="role-info">
+                <h3>Operation Heads</h3>
+                <p>Manages the technical aspects of drone operations.</p>
+                <ul>
+                    <li>Maintains drone equipment</li>
+                    <li>Ensures safety protocols</li>
+                    <li>Trains new members</li>
+                </ul>
+            </div>
+            <div class="role-image" onclick="openModal('Operation Heads', 'Manages technical operations, maintains equipment, ensures safety, trains members.')">
+                <img src="https://res.cloudinary.com/dwgy2kfpx/image/upload/v1743488665/Screenshot_2025-04-01_115053_k0jv6w.png" alt="Operation Heads">
+            </div>
+        </div>
+
+        <div id="social-media-heads" class="role-card">
+            <div class="role-info">
+                <h3>Social Media Heads</h3>
+                <p>Manages the club's online presence.</p>
+                <ul>
+                    <li>Creates content for social platforms</li>
+                    <li>Engages with followers</li>
+                    <li>Promotes club events</li>
+                </ul>
+            </div>
+            <div class="role-image" onclick="openModal('Social Media Heads', 'Manages online presence, creates content, engages audience, promotes events.')">
+                <img src="https://res.cloudinary.com/dwgy2kfpx/image/upload/v1743488665/Screenshot_2025-04-01_115158_ttenlm.png" alt="Social Media Heads">
+            </div>
+        </div>
+
+        <div id="outreach-head" class="role-card">
+            <div class="role-info">
+                <h3>Outreach Head</h3>
+                <p>Handles external relations and partnerships.</p>
+                <ul>
+                    <li>Coordinates with other clubs</li>
+                    <li>Seeks sponsorship opportunities</li>
+                    <li>Organizes community events</li>
+                </ul>
+            </div>
+            <div class="role-image" onclick="openModal('Outreach Head', 'Handles external relations, coordinates with other clubs, seeks sponsorships, organizes community events.')">
+                <img src="https://res.cloudinary.com/dwgy2kfpx/image/upload/v1743488665/Screenshot_2025-04-01_115121_icopin.png" alt="Outreach Head">
+            </div>
+        </div>
+
+        <div id="outreach-head" class="role-card">
+            <div class="role-info">
+                <h3>Outreach Head</h3>
+                <p>Handles external relations and partnerships.</p>
+                <ul>
+                    <li>Coordinates with other clubs</li>
+                    <li>Seeks sponsorship opportunities</li>
+                    <li>Organizes community events</li>
+                </ul>
+            </div>
+            <div class="role-image" onclick="openModal('Outreach Head', 'Handles external relations, coordinates with other clubs, seeks sponsorships, organizes community events.')">
+                <img src="https://res.cloudinary.com/dwgy2kfpx/image/upload/v1743488665/Screenshot_2025-04-01_115133_hjmwym.png" alt="Outreach Head">
+            </div>
+        </div>
+
+        <div id="finance-head" class="role-card">
+            <div class="role-info">
+                <h3>Finance Head</h3>
+                <p>Manages the club's budget and finances.</p>
+                <ul>
+                    <li>Tracks expenses</li>
+                    <li>Prepares budget reports</li>
+                    <li>Handles fundraising</li>
+                </ul>
+            </div>
+            <div class="role-image" onclick="openModal('Finance Head', 'Manages club finances, tracks expenses, prepares reports, handles fundraising.')">
+                <img src="https://res.cloudinary.com/dwgy2kfpx/image/upload/v1743488665/Screenshot_2025-04-01_115144_ls6hnk.png" alt="Finance Head">
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="roleModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title">Role Title</h2>
+            <p id="modal-description">Role description goes here</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About Drone Club</h3>
+                <p>We are a group of enthusiasts exploring drone technology and its applications in various fields.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#roles">Roles</a></li>
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#login">Login</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Connect With Us</h3>
+                <div class="socials">
+                    <a href="https://www.linkedin.com/company/drone-club-niat"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://www.instagram.com/niat.drone.club/"><i class="fab fa-instagram"></i> Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 Drone Club | Designed by Club President
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>`
